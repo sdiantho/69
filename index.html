@@ -31,7 +31,9 @@ function checkTime(i) {
 </body>
 <style>
   @import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
-
+  script {
+    margin-top: 20%;
+  }
   body {
     font-family: 'Comic Neue', cursive;
     min-height: 100vh;
@@ -180,16 +182,16 @@ function checkTime(i) {
       const jam = d.getHours()
       const oldNow = now
       if (jam >= 6 && jam < 12) {
-        now = 'pagi Farasya'
+        now = 'pagi <3'
       }
       else if (jam >= 12 && jam < 15) {
-        now = 'siang Farasya'
+        now = 'siang <3'
       }
       else if (jam >= 15 && jam < 19) {
-        now = 'sore Farasya'
+        now = 'Sore <3'
       }
       else if ((jam >= 19 && jam <= 24) || jam < 6) {
-        now = 'malam Farasya'
+        now = 'Malam <3'
       }
 
       oldNow != now ? changeTheme() : ''
