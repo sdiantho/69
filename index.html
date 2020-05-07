@@ -156,16 +156,16 @@
       const jam = d.getHours()
       const oldNow = now
       if (jam >= 6 && jam < 12) {
-        now = 'pagi'
+        now = 'pagi Risda:3'
       }
       else if (jam >= 12 && jam < 15) {
-        now = 'siang'
+        now = 'siang Risda:3'
       }
       else if (jam >= 15 && jam < 19) {
-        now = 'sore'
+        now = 'sore Risda:3'
       }
       else if ((jam >= 19 && jam <= 24) || jam < 6) {
-        now = 'malam'
+        now = 'malam Risda:3'
       }
 
       oldNow != now ? changeTheme() : ''
